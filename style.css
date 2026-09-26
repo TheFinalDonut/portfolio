@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Sansform";
+    src: url('Sansform-FreeDemo.woff2') format('woff2'),
+        url('Sansform-FreeDemo.woff') format('woff'),
+        url('Sansform-FreeDemo.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: palevioletred;
+}
+
+.h1 {
+    font-family: 'Sansform';
+    font-size: 4rem;
+    text-align: left;
+    
+}
+
+.p1 {
+    font-family: "Sansform";
+    font-size: 1rem;
+    text-align: left;
+}
+
+* {
+    font-family: "Sansform";
+}
