@@ -99,8 +99,8 @@ body {
 }
 
 img {
-    width: 902px;
-    height: 1080px;
+    width: 902/1080 * 100vh;
+    height: 100vh;
     position: relative;
     z-index: 1;
     left: 100px;
@@ -108,7 +108,7 @@ img {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  height: 4px;
 }
 
 /* Track */
