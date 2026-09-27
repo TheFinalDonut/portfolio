@@ -8,23 +8,120 @@
     font-display: swap;
 }
 
+
 body {
-    background-color: palevioletred;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.scroll-container {
+    display: flex;
+    width: 300vw; /* Total width = 100vw multiplied by number of pages */
+    height: 100vh;
+}
+
+.page {
+    width: 100vw; /* Each section takes exactly full screen width */
+    height: 100vh;
+    display: flex;
+}
+
+.main {
+    background-image: url(background.png);
+    background-color: rgb(213, 150, 179);
+    position: relative;
+}
+
+.about {
+    background-color: rgb(213, 150, 179);
+}
+
+.showcase {
+    background-color: rgb(213, 150, 179);
+}
+
+#grad {
+    position: absolute; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 100vw; /* Full width (cover the whole page) */
+    height: 100vh; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
+    /* cursor: mouse; Add a pointer on hover */
+    background-image: linear-gradient(to right, rgb(213, 150, 179), rgba(0, 0, 0, 0));
 }
 
 .h1 {
     font-family: 'Sansform';
     font-size: 4rem;
-    text-align: left;
-    
+    position: relative;
+    top: -30px;
+    left: 50px;
+    z-index: 1;
+    color: rgb(8, 215, 238);
+    text-wrap-mode: nowrap;
+    mix-blend-mode: overlay;
 }
 
 .p1 {
     font-family: "Sansform";
-    font-size: 1rem;
-    text-align: left;
+    font-size: 2rem;
+    position: relative;    
+    top: 170px;
+    left: -730px;
+    z-index: 1;
+    color: rgb(8, 215, 238);
+    text-wrap-mode: nowrap;
+    mix-blend-mode: overlay;
+}
+
+.aboutHeader {
+    font-family: 'Sansform';
+    font-size: 4rem;
+    position: relative;
+    top: -30px;
+    left: 50px;
+    z-index: 1;
+    color: rgb(8, 215, 238);
+    mix-blend-mode: overlay;
 }
 
 * {
     font-family: "Sansform";
+}
+
+img {
+    width: 902px;
+    height: 1080px;
+    position: relative;
+    z-index: 1;
+    left: 100px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(70, 227, 245);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fc6a9b;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
