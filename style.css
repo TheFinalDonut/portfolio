@@ -1,8 +1,8 @@
 @font-face {
     font-family: "Sansform";
-    src: url('Sansform-FreeDemo.woff2') format('woff2'),
-        url('Sansform-FreeDemo.woff') format('woff'),
-        url('Sansform-FreeDemo.ttf') format('truetype');
+    src: url('fonts/Sansform-FreeDemo.woff2') format('woff2'),
+        url('fonts/Sansform-FreeDemo.woff') format('woff'),
+        url('fonts/Sansform-FreeDemo.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
