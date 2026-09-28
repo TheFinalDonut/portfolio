@@ -64,8 +64,9 @@ body {
     font-size: 4rem;
     position: relative;
     top: -30px;
-    left: 50px;
+    left: 100px;
     z-index: 1;
+    opacity: 0;
     color: rgb(8, 215, 238);
     text-wrap-mode: nowrap;
     mix-blend-mode: overlay;
@@ -76,8 +77,9 @@ body {
     font-size: 2rem;
     position: relative;    
     top: 170px;
-    left: -730px;
+    left: -680px;
     z-index: 1;
+    opacity: 0;
     color: rgb(8, 215, 238);
     text-wrap-mode: nowrap;
     mix-blend-mode: overlay;
@@ -88,9 +90,23 @@ body {
     font-size: 4rem;
     position: relative;
     top: -30px;
-    left: 50px;
+    left: 100px;
     z-index: 1;
+    opacity: 0;
     color: rgb(8, 215, 238);
+    mix-blend-mode: overlay;
+}
+
+.aboutP1 {
+    font-family: "Sansform";
+    font-size: 2rem;
+    position: relative;    
+    top: 170px;
+    left: -390px;
+    z-index: 1;
+    opacity: 0;
+    color: rgb(8, 215, 238);
+    text-wrap-mode: nowrap;
     mix-blend-mode: overlay;
 }
 
